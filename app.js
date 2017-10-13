@@ -42,8 +42,7 @@ var bot = new builder.UniversalBot(connector,[
 ]);
 // The dialog stack is cleared and this dialog is invoked when the user enters 'help'.
 bot.dialog('help', function (session, args, next) {
-session.endDialog("This is a bot whose objectives are not yet defined. <br/>Please say 'next' to
-continue");
+session.endDialog("This is a bot whose objectives are not yet defined. <br/>Please say 'next' to continue");
 })
 .triggerAction({
 matches: /^help$/i,
