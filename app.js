@@ -33,7 +33,7 @@ server.post('https://Irona.azurewebsites.net/api/messages', connector.listen());
 var bot = new builder.UniversalBot(connector,[
    bot.on('conversationUpdate', function (message) {
    bot.send("Welcome to Virtual Onboarding Assistant");
-   },
+   });
     //Ask User his/her name
     function (session) {
     builder.Prompts.text(session,"Hi, What's your name")
