@@ -33,6 +33,7 @@ server.post('https://Irona.azurewebsites.net/api/messages', connector.listen());
 var bot = new builder.UniversalBot(connector,[
     //Ask User his/her name
     function (session) {
+    session.send("Welcome");
     builder.Prompts.text(session,"Hi, What's your name")
     },
     // First dialog with Bot
